@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
+RUN pip install aiohttp
+
 CMD ["python3", "Game.py"]

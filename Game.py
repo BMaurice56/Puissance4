@@ -2,11 +2,12 @@ import asyncio
 import pickle
 import Minimax
 import os
+import socket
 from aiohttp import web
 from copy import deepcopy
 from random import randint
 
-ip_address = os.environ["IP_ADRESSE_SERVEUR"]
+ip_address = os.environ.get("IP_ADRESSE_SERVEUR", "0.0.0.0")
 port = 6000
 web_port = 6001
 

@@ -5,4 +5,4 @@ services:
       - 6000:6000
       - 6001:6001
     environment:
-      - IP_ADRESSE_CLIENT="192.168.200.16"
+      - IP_ADRESSE_SERVEUR="192.168.200.16"

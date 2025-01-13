@@ -5,7 +5,7 @@ import os
 from copy import deepcopy
 from random import randint
 
-ip_address = os.environ["IP_ADRESSE_CLIENT"]
+ip_address = os.environ["IP_ADRESSE_SERVEUR"]
 port = 6000
 joueur = 1
 
