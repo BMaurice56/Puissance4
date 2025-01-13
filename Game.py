@@ -7,8 +7,8 @@ from copy import deepcopy
 from random import randint
 
 ip_address = os.environ["IP_ADRESSE_SERVEUR"]
-port = 5000
-web_port = 5001
+port = 6000
+web_port = 6001
 
 id_parties = []
 parties = {}

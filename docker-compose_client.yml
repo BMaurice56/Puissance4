@@ -1,0 +1,9 @@
+versionb: "3"
+services:
+  game:
+    image: https://192.168.200.19/client-puissance4@latest
+    ports:
+      - 6000:6000
+      - 6001:6001
+    environment:
+      - IP_ADRESSE_CLIENT="192.168.200.16"
