@@ -226,33 +226,3 @@ class Arbre:
 
         return s
 
-
-if __name__ == "__main__":
-    s7 = Arbre("Noeud 7")
-    s6 = Arbre("Noeud 6")
-    s5 = Arbre("Noeud 5")
-    s4 = Arbre("Noeud 4", [s5, s6])
-    s3 = Arbre("Noeud 3", [s4])
-    s2 = Arbre("Noeud 2", [s7])
-    arbre = Arbre("Noeud 1")
-    arbre.ajouter_enfant(s3)
-    arbre.ajouter_enfant(s2)
-
-    print(f"Hauteur de l'arbre : {arbre.hauteur_iterative()}")
-    print(f"Hauteur (récursive) de l'arbre : {arbre.hauteur_recursive()}")
-    print(f"Taille de l'arbre : {arbre.taille()}")
-    print(f"Taille de l'arbre : {arbre.taille()}")
-    print(f"Parcours en largeur de l'arbre : {arbre.parcours_largeur()}")
-    print(
-        f"Parcours en profondeur prefixe de l'arbre : {arbre.parcours_profondeur_prefixe()}")
-    print(
-        f"Parcours en profondeur postfixe de l'arbre : {arbre.parcours_profondeur_postfixe()}")
-
-    print(
-        f"Hauteur de l'arbre 'Noeud 4' : {arbre.sous_arbre('Noeud 4').hauteur_iterative()}")
-    print(
-        f"Hauteur (récursive) de l'arbre 'Noeud 4' : {arbre.sous_arbre('Noeud 4').hauteur_recursive()}")
-    print(
-        f"Taille de l'arbre 'Noeud 4' : {arbre.sous_arbre('Noeud 4').taille()}")
-
-    print(arbre)
