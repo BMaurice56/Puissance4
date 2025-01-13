@@ -1,5 +1,3 @@
-from time import sleep
-import os
 # création de la grille de jeux
 grille = [
     [".", ".", ".", ".", ".", ".", "."],

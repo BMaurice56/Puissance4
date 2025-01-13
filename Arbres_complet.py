@@ -1,4 +1,3 @@
-import graphviz
 from pilesFiles import Pile, File
 
 

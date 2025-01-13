@@ -1,7 +1,6 @@
 from puissance4 import *
 from Arbres_complet import Arbre
 from copy import deepcopy
-import time
 
 score_2 = 50
 score_3 = 200
