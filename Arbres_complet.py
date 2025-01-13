@@ -202,29 +202,6 @@ class Arbre:
         else:
             return p
 
-    def dessiner(self) -> None:
-        """
-        Représente l'arbre
-        """
-        key = 0
-        pile = Pile()
-
-        g = graphviz.Graph(format="png")
-        g.node(str(key), str(self.get_valeur()))
-        pile.empiler((self, key))
-
-        while not pile.est_vide():
-            enCours, enCours_key = pile.depiler()
-            for enfant in enCours.get_enfants():
-                key += 1
-                g.node(str(key), str(enfant.get_valeur()))
-                pile.empiler((enfant, key))
-                g.edge(str(enCours_key), str(key))
-
-        g.render(view=True)
-
-        return None
-
     def __str__(self):
         """
         Représentationd dee l'arbre dans la console
@@ -261,7 +238,6 @@ if __name__ == "__main__":
     arbre = Arbre("Noeud 1")
     arbre.ajouter_enfant(s3)
     arbre.ajouter_enfant(s2)
-    # arbre.dessiner()
 
     print(f"Hauteur de l'arbre : {arbre.hauteur_iterative()}")
     print(f"Hauteur (récursive) de l'arbre : {arbre.hauteur_recursive()}")

@@ -1,7 +1,6 @@
-versionb: "3"
 services:
   game:
-    image: https://192.168.200.19/client-puissance4@latest
+    image: 192.168.200.19:443/client-puissance4:latest
     ports:
       - 6000:6000
       - 6001:6001
