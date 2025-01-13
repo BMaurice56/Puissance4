@@ -2,7 +2,6 @@ import asyncio
 import pickle
 import Minimax
 import os
-import socket
 from aiohttp import web
 from copy import deepcopy
 from random import randint
