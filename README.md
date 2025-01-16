@@ -8,7 +8,8 @@ Pour lancer ce projet, vous devez définir dans l'environnement :
 
 Le port par défaut pour les sessions de jeu est le port 6000 et le port de l'interface web est le 6001.
 
-N'hésitez pas à modifier le docker compose pour l'adapter sur la machine !
+N'hésitez pas à modifier le docker compose pour l'adapter à la machine (notamment l'URL du registre contenant les
+images et les variables d'environnement) !
 
 Pour lancer le serveur :
 ```shell
