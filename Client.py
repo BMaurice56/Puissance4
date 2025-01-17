@@ -2,13 +2,16 @@ import socket
 import Minimax
 import pickle
 import os
+import time
 from copy import deepcopy
 from random import randint
 
 ip_address = os.environ["IP_ADRESSE_SERVEUR"]
-port = 6000
+port = int(os.environ["PORT_SERVEUR"])
 joueur = 1
 
+print("Connexion en cours...")
+time.sleep(3)
 
 def connect_to_server(host, port_serveur):
     # Execute 5 parties

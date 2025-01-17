@@ -3,6 +3,13 @@ services:
     image: localhost:443/client-puissance4:latest
     ports:
       - 6000:6000
+    environment:
+      - IP_ADRESSE_SERVEUR=192.168.200.16
+      - PORT_SERVEUR=6000
+  game2:
+    image: localhost:443/client-puissance4:latest
+    ports:
       - 6001:6001
     environment:
       - IP_ADRESSE_SERVEUR=192.168.200.16
+      - PORT_SERVEUR=6000
