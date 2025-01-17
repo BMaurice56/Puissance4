@@ -11,6 +11,8 @@ Le port par défaut pour les sessions de jeu est le port 6000 et le port de l'in
 N'hésitez pas à modifier le docker compose pour l'adapter à la machine (notamment l'URL du registre contenant les
 images et les variables d'environnement) !
 
+LANCER LE SERVEUR EN PREMIER !!!
+
 Pour lancer le serveur sur Linux 1:
 ```shell
 docker compose -f docker-compose_serveur.yml up
